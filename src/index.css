@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/plus-jakarta-sans-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/plus-jakarta-sans-v11-latin-700.woff2') format('woff2'); 
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.login-bg {
+  background-image: url("../src/assets/images/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-form-bg {
+  background: linear-gradient(159.02deg, #0F123B 14.25%, #090D2E 56.45%, #020515 86.14%);
+}
