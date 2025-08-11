@@ -1,8 +1,11 @@
 
+import { useCookies } from "react-cookie"
 import LoginRoutes from "./routes/loginRoutes"
+import DashboardRoute from "./routes/DashboardRoute"
 
 const App = () => {
-  return <LoginRoutes/>
+  const [cookies] = useCookies(['token'])
+  return cookies.token ? <DashboardRoute/> : <LoginRoutes/>
    
 
 }

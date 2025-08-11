@@ -1,24 +1,29 @@
 @import "tailwindcss";
 
-
 @font-face {
-  font-display: swap; 
-  font-family: 'Plus Jakarta Sans';
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../src/assets/fonts/plus-jakarta-sans-v11-latin-regular.woff2') format('woff2');
+  src: url("../src/assets/fonts/plus-jakarta-sans-v11-latin-regular.woff2")
+    format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../src/assets/fonts/plus-jakarta-sans-v11-latin-700.woff2') format('woff2'); 
+  src: url("../src/assets/fonts/plus-jakarta-sans-v11-latin-700.woff2")
+    format("woff2");
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.containers{
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 .login-bg {
@@ -29,5 +34,76 @@ body {
 }
 
 .login-form-bg {
-  background: linear-gradient(159.02deg, #0F123B 14.25%, #090D2E 56.45%, #020515 86.14%);
+  background: linear-gradient(
+    159.02deg,
+    #0f123b 14.25%,
+    #090d2e 56.45%,
+    #020515 86.14%
+  );
 }
+
+.bg-color {
+  background: linear-gradient(
+    123.64deg,
+    rgba(255, 255, 255, 0) -22.38%,
+    rgba(255, 255, 255, 0.039) 70.38%
+  );
+  border-radius: 30px;
+}
+
+.register-bg {
+  background-image: url("../src/assets/images/register-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-dashboard-cover {
+  background-image: url("../src/assets/images/bg-coverr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.p-bg {
+  background: linear-gradient(
+    97.89deg,
+    #ffffff 70.67%,
+    rgba(117, 122, 140, 0) 108.55%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard-bg {
+  background: linear-gradient(
+    111.84deg,
+    rgba(6, 11, 38, 0.94) 59.3%,
+    rgba(26, 31, 55, 0) 100%
+  );
+  backdrop-filter: blur(120px);
+}
+
+.active-class {
+    padding: 5px 0 5px 10px;
+    background: #1A1F37;
+    border-radius: 12px;
+}
+.content-bg{
+  background: linear-gradient(126.97deg, rgba(6, 11, 38, 0.74) 28.26%, rgba(26, 31, 55, 0.5) 91.2%);
+}
+
+.header-bg {
+  backdrop-filter: blur(42px)
+
+}
+.ttt{
+ border: 2px solid;
+ border-image-source: radial-gradient(69.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+ radial-gradient(60% 51.57% at 50% 50%, #582CFF 0%, rgba(88, 44, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+ radial-gradient(54.8% 53% at 50% 50%, #151515 0%, rgba(21, 21, 21, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+}
+
+
