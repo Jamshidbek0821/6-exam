@@ -42,7 +42,7 @@ const ProjectForm = ({
           <input
             type="text"
             name="name"
-            placeholder="Project Name"
+            placeholder="Company Name"
             value={newProject.name}
             onChange={handleChange}
             className="rounded-[10px] px-3 py-2 border-[#656B8C] border-[2px] text-[#656B8C]"
@@ -85,17 +85,17 @@ const ProjectForm = ({
 
           <div className="flex gap-3 justify-end">
             <button
-              type="button"
-              onClick={onClose}
-              className="px-4 py-2 bg-gray-700 rounded text-white hover:bg-gray-600"
-            >
-              Cancel
-            </button>
-            <button
               type="submit"
               className="px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-500"
             >
               {addProjectId ? "Update" : "Add"}
+            </button>
+            <button
+              type="button"
+              onClick={onClose}
+              className="px-4 py-2 bg-gray-700 rounded text-white hover:bg-gray-600"
+            >
+              Exit
             </button>
           </div>
         </form>

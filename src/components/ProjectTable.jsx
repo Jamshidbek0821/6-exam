@@ -8,7 +8,7 @@ const ProjectTable = ({
   handleRestore,
   onEdit,
 }) => {
-  // "10%" stringidan faqat raqam qismini ajratib olish uchun helper
+
   const getCompValue = (comp) => {
     if (!comp) return 0;
     return parseInt(comp.replace("%", ""), 10);
@@ -29,10 +29,10 @@ const ProjectTable = ({
         <tbody className="text-white">
           {listToShow.length > 0 ? (
             listToShow.map((project) => {
-              const compValue = getCompValue(project.comp); // 10, 25, 60, 100 yoki 0
+              const compValue = getCompValue(project.comp);
 
               return (
-                <tr key={project.id} className="border-b text-gray-500">
+                <tr key={project.id} className="border-b text-white border-gray-500">
                   <td className="py-2 flex items-center gap-2">
                     {project.img && (
                       <img
@@ -46,11 +46,9 @@ const ProjectTable = ({
                   <td className="py-2">${project.budget}</td>
                   <td className="py-2">
                     <span
-                      className={`rounded-[8px] text-[14px] px-[10px] py-[2px] opacity-[70%] ${
-                        project.status === "Active"
-                          ? "bg-[#01B574] text-white border border-[#01B574]"
-                          : "border border-white text-white"
-                      }`}
+                      className={`rounded-[8px] text-[14px] px-[10px] py-[2px] font-bold text-white 
+            
+                      `}
                     >
                       {project.status}
                     </span>

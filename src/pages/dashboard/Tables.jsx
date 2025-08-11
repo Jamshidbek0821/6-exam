@@ -23,7 +23,7 @@ const initialProjectState = {
   name: "",
   budget: "",
   status: "Active",
-  completion: "",   // Yangi maydon qo‘shildi
+  completion: "",  
 };
 
 const Tables = () => {
@@ -142,7 +142,6 @@ const Tables = () => {
       return;
     }
 
-    // Budget ga qarab completion hisoblash (masalan 10%)
     const completion = (budgetNum * 0.10).toFixed(2);
 
     let updated;
